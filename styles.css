@@ -1,0 +1,74 @@
+body, html{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(248, 174, 174);
+    text-align: center;
+}
+#container{
+    margin: auto;
+    width: 50%;
+}
+#container h1{
+    margin-top: 7%;
+    margin-bottom: 0%;
+    font-size: 4rem;
+    font-weight: bold;
+    font-variant:small-caps;
+    font-family: "Kaushan Script";
+}
+.inputs{
+    border: 1px solid red;
+    transition: none;
+}
+.inputs:hover{
+    border:2px solid red;
+}
+.inputs:focus, .inputs:active{
+    box-shadow: none;
+}
+button{
+    width: 10%;
+    border: 1px solid black;
+    border-radius: 15%;
+    margin-top: 5%;
+    font-weight: 600;
+}
+button:hover{
+    background-color: red;
+    color: white;
+}
+
+/*smartphone*/
+@media screen and (max-width:767px){
+    #container{
+        margin: 50% auto;
+    }
+    #container h1{
+        font-size: 2.3rem;
+    }
+    img{
+        width: 80px;
+    }
+    #breaktag{
+        display: none;
+    }
+    .inputs{
+        width: 100%;
+        display: block;
+    }
+    #input1::placeholder {
+        font-size: 0.8rem;
+        content: 'Your name';
+    }
+    #input2::placeholder {
+        font-size: 0.8rem;
+        content: 'Their name';
+    }
+    button{
+        width: 30%;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+}
