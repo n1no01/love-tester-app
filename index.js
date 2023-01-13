@@ -52,5 +52,6 @@ submitButton.addEventListener("click", function(){
      form.trigger("reset");
      $("#output").text(" ");
      $("input").prop("disabled", false); //ponovo omogucava promjenu sadrzaja inputa
+     submitButton.disabled = true;
  });
 
