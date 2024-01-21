@@ -19,6 +19,10 @@ testButton.on("click",function(){
     } else if(randomNumber>90){
         $("#output").text(ispis + "😍");
     }
+    if(input1.value.length + input2.value.length == 11)
+    {
+        $("#output").text("Your love score is: 100%" + "😍");
+    }
 })
 
 //ne dozvoljava praznu formu 
